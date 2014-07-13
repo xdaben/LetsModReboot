@@ -1,5 +1,6 @@
 package com.xdaben.letsmodreboot;
 
+import com.xdaben.letsmodreboot.configuration.configurationHandler;
 import com.xdaben.letsmodreboot.proxy.IProxy;
 import com.xdaben.letsmodreboot.reference.Reference;
 import cpw.mods.fml.common.Mod;
@@ -20,7 +21,7 @@ public class LetsModReboot
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
-
+        configurationHandler.init(event.getSuggestedConfigurationFile());
     }
     @Mod.EventHandler
     public void init(FMLInitializationEvent event)
