@@ -4,6 +4,7 @@ import com.xdaben.letsmodreboot.handler.ConfigurationHandler;
 import com.xdaben.letsmodreboot.proxy.IProxy;
 import com.xdaben.letsmodreboot.reference.Reference;
 import com.xdaben.letsmodreboot.utility.LogHelper;
+import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
@@ -24,6 +25,7 @@ public class LetsModReboot
     {
 
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
+        FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
         LogHelper.info("Preinit complete");
     }
     @Mod.EventHandler
