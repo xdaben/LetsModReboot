@@ -1,6 +1,7 @@
 package com.xdaben.letsmodreboot;
 
 import com.xdaben.letsmodreboot.handler.ConfigurationHandler;
+import com.xdaben.letsmodreboot.init.ModItems;
 import com.xdaben.letsmodreboot.proxy.IProxy;
 import com.xdaben.letsmodreboot.reference.Reference;
 import com.xdaben.letsmodreboot.utility.LogHelper;
@@ -26,6 +27,7 @@ public class LetsModReboot
 
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
+        ModItems.init();
         LogHelper.info("Preinit complete");
     }
     @Mod.EventHandler
