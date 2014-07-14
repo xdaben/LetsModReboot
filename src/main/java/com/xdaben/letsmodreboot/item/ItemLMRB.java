@@ -1,5 +1,6 @@
 package com.xdaben.letsmodreboot.item;
 
+import com.xdaben.letsmodreboot.creativetab.CreativeTabLMRB;
 import com.xdaben.letsmodreboot.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -12,6 +13,7 @@ public class ItemLMRB extends Item
     public ItemLMRB()
     {
         super();
+        this.setCreativeTab(CreativeTabLMRB.LMRB_TAB);
     }
 
     @Override
