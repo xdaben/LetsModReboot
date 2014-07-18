@@ -9,3 +9,5 @@ ForgeModLoader-client*
 /.gradle
 /eclipse
 LetsModReboot.iml
+LetsModReboot.ipr
+LetsModReboot.iws
