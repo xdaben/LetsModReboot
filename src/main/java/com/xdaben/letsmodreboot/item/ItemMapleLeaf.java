@@ -9,7 +9,10 @@ public class ItemMapleLeaf extends ItemLMRB
     {
         super();
         this.setUnlocalizedName("mapleLeaf");
-        this.maxStackSize = 12;
+        this.setMaxStackSize(12);
+
 
     }
+
+
 }

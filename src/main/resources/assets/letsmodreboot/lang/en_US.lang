@@ -4,3 +4,6 @@ item.letsmodreboot:mapleLeaf.name=A pretty nice maple leaf
 
 #block localizations
 tile.letsmodreboot:flag.name=This is supposed to be a flag but I got lazy
+
+#tabs
+itemGroup.letsmodreboot=Lets mod!

@@ -7,7 +7,7 @@ import net.minecraft.item.Item;
 
 public class CreativeTabLMRB
 {
-    public static final CreativeTabs LMRB_TAB = new CreativeTabs(Reference.MOD_ID)
+    public static final CreativeTabs LMRB_TAB = new CreativeTabs(Reference.MOD_ID.toLowerCase())
     {
         @Override
         public Item getTabIconItem()
@@ -15,10 +15,5 @@ public class CreativeTabLMRB
             return ModItems.originalItem;
         }
 
-        @Override
-        public String getTranslatedTabLabel()
-        {
-            return Reference.MOD_NAME;
-        }
     };
 }
