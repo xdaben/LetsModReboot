@@ -9,6 +9,6 @@ public class BlockFlag extends BlockLMRB
     public BlockFlag()
     {
         super();
-        this.setBlockName(Names.Blocks.FLAG);
+        this.setBlockName(Names.BLOCKS.FLAG);
     }
 }
