@@ -2,6 +2,7 @@ package com.xdaben.letsmodreboot.init;
 
 import com.xdaben.letsmodreboot.block.BlockFlag;
 import com.xdaben.letsmodreboot.block.BlockLMRB;
+import com.xdaben.letsmodreboot.reference.Names;
 import com.xdaben.letsmodreboot.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
 
@@ -16,6 +17,6 @@ public class ModBlocks
 
     public static void init()
     {
-        GameRegistry.registerBlock(flag, "flag");
+        GameRegistry.registerBlock(flag, Names.BLOCKS.FLAG);
     }
 }

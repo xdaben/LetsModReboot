@@ -1,5 +1,6 @@
 package com.xdaben.letsmodreboot.handler;
 
+import com.xdaben.letsmodreboot.reference.ConfigStrings;
 import com.xdaben.letsmodreboot.reference.Reference;
 import cpw.mods.fml.client.event.ConfigChangedEvent;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
@@ -11,7 +12,7 @@ import java.io.File;
 public class ConfigurationHandler
 {
     public static Configuration configuration;
-    public static boolean testValue = false;
+    public static boolean configValue = false;
 
 
     public static void init(File configFile)
@@ -36,7 +37,7 @@ public class ConfigurationHandler
 
     private static void loadConfiguration()
     {
-        testValue = configuration.getBoolean("configValue", Configuration.CATEGORY_GENERAL, false, "The is an example configuration value");
+        configValue = configuration.getBoolean(ConfigStrings.OPTIONS.CONFIG_VALUE, ConfigStrings.CATAGORIES.GENERAL, false, ConfigStrings.DESCRIPTIONS.CONFIG_VALUE);
 
         if (configuration.hasChanged())
         {

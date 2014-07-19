@@ -26,7 +26,7 @@ public class BlockLMRB extends Block
     @Override
     public String getUnlocalizedName()
     {
-        return String.format("tile.%s%s", Reference.MOD_ID.toLowerCase() + ":", getUnwrapedUnlocalizedName(super.getUnlocalizedName()));
+        return String.format("tile.%s:%s", Reference.MOD_ID.toLowerCase(), getUnwrapedUnlocalizedName(super.getUnlocalizedName()));
     }
 
     @Override

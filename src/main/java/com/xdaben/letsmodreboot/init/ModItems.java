@@ -3,6 +3,7 @@ package com.xdaben.letsmodreboot.init;
 import com.xdaben.letsmodreboot.item.ItemLMRB;
 import com.xdaben.letsmodreboot.item.ItemMapleLeaf;
 import com.xdaben.letsmodreboot.item.ItemOriginalItem;
+import com.xdaben.letsmodreboot.reference.Names;
 import com.xdaben.letsmodreboot.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
 
@@ -14,7 +15,7 @@ public class ModItems
 
     public static void init()
     {
-        GameRegistry.registerItem(mapleLeaf, "Mapleleaf");
-        GameRegistry.registerItem(originalItem, "Origionalitem");
+        GameRegistry.registerItem(mapleLeaf, Names.ITEMS.MAPLE_LEAF);
+        GameRegistry.registerItem(originalItem, Names.ITEMS.ORIGINAL_ITEM);
     }
 }
