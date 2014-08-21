@@ -1,9 +1,15 @@
 #item localizations
 item.letsmodreboot:originalItem.name=The most ridiculous item I have ever seen
 item.letsmodreboot:mapleLeaf.name=A pretty nice maple leaf
+item.letsmodreboot:stupidsword.name=A stupid sword
 
 #block localizations
 tile.letsmodreboot:flag.name=This is supposed to be a flag but I got lazy
 
-#tabs
+#creative tabs
 itemGroup.letsmodreboot=Lets mod!
+
+#keys
+keys.letsmodreboot.catagory=Let's Mod Reboot
+keys.letsmodreboot.charge=Charge
+keys.letsmodreboot.release=Release

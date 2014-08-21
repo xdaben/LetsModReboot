@@ -1,8 +1,10 @@
 package com.xdaben.letsmodreboot;
 
+import com.xdaben.letsmodreboot.client.handler.KeyInputHandler;
 import com.xdaben.letsmodreboot.handler.ConfigurationHandler;
 import com.xdaben.letsmodreboot.init.ModBlocks;
 import com.xdaben.letsmodreboot.init.ModItems;
+import com.xdaben.letsmodreboot.init.Recipes;
 import com.xdaben.letsmodreboot.proxy.IProxy;
 import com.xdaben.letsmodreboot.reference.Reference;
 import com.xdaben.letsmodreboot.utility.LogHelper;
@@ -28,6 +30,8 @@ public class LetsModReboot
 
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
+
+        proxy.registerKeybindings();
         ModItems.init();
         ModBlocks.init();
         LogHelper.info("Preinit complete");
@@ -35,6 +39,9 @@ public class LetsModReboot
     @Mod.EventHandler
     public void init(FMLInitializationEvent event)
     {
+
+        Recipes.init();
+        FMLCommonHandler.instance().bus().register(new KeyInputHandler());
         LogHelper.info("Init complete");
     }
     @Mod.EventHandler
